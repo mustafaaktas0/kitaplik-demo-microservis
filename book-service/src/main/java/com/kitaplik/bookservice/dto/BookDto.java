@@ -15,7 +15,6 @@ public class BookDto {
     private String isbn;
 
     public static BookDto converter(Book book) {
-
         return new BookDto(book.getId(),
                 book.getTitle(),
                 book.getBookYear(),
