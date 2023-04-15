@@ -31,9 +31,9 @@ public class BookService {
                 .orElseThrow((()->new BookNotFoundException("Book could not found by isbn:"+isbn)));
     }
 
-    public BookDto findBookDetailsByIsbn(String isbn) {
-        return bookRepository.findById(isbn)
+    public BookDto findBookDetailsByIsbn(String id) {
+        return bookRepository.findById(id)
                 .map(BookDto::converter)
-                .orElseThrow((()->new BookNotFoundException("Book could not found by isbn:"+isbn)));
+                .orElseThrow((()->new BookNotFoundException("Book could not found by id:"+id)));
     }
 }
