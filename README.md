@@ -19,7 +19,7 @@ Microservis demo proje
 
 -Restful API
 
--REsilienje4j
+-Resilienje4j
 
 -Lombok
 
